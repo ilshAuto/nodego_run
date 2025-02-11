@@ -1,0 +1,3 @@
+email----password----proxy----token
+example:
+hugo@gmail.com----hugo210Da----socks5://127.0.0.1:10001----eyxxxxxxx
