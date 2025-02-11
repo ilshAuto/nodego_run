@@ -40,7 +40,7 @@ NodeGo 自动化脚本，支持自动签到、节点维护等功能。
 ### 使用方法
 1. 克隆仓库：git clone https://github.com/ilshAuto/nodego_auto.git 或直接下载整个仓库ZIP文件
 2. 安装依赖：pip install -r requirements.txt
-3. 配置环境变量：设置TOKEN、PROXY_URL等
+3. 配置环境变量（tokens）：设置TOKEN、PROXY_URL等
 4. 运行脚本：python nodego_auto.py
 
 
@@ -52,10 +52,5 @@ NodeGo 自动化脚本，支持自动签到、节点维护等功能。
     ```bash
     pip install -r requirements.txt
     ```
-3. Configure environment variables:
-    ```bash
-    export TOKEN=your_token
-    export PROXY_URL=your_proxy_url
-    ``` 
 
 
