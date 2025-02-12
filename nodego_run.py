@@ -72,7 +72,12 @@ class NodeGo:
             response = await self.user_scraper.get_async('https://nodego.ai/api/user/me')
             data = response.json()
             self.wallet_address = data['metadata'].get('walletAddress')
-            self.last_checkin = data['metadata'].get('lastCheckinAt')
+            last_checkin = data['metadata'].get('lastCheckinAt')
+            if last_checkin is None:
+                self.last_checkin = 0
+            else:
+                self.last_checkin = last_checkin
+
             self.reward_point = data['metadata'].get('rewardPoint', 0)
             logger.info(f"interaction-res: {self.proxy}----ilshAuto----user-info: points:{self.reward_point} last_checkin:{self.last_checkin}")
             return True
